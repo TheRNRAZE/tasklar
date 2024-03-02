@@ -1,0 +1,126 @@
+
+
+
+
+ol li {
+    padding: 15px;
+    /* color: #fff; bele de yazila biler */
+    
+    list-style-position: inside;
+}
+
+ol{
+    width: 400px;
+    margin-left: auto;
+    margin-right: auto;
+}
+
+
+
+
+
+
+
+
+
+ol li:first-child{
+    font-family: "Roboto", sans-serif;
+    color: white;
+    background-color: black;
+}
+ol li:nth-child(2){
+    font-family: "Roboto", sans-serif;
+    color: white;
+    background-color: silver;
+}
+
+ol li:nth-child(3){
+    font-family: "Roboto", sans-serif;
+    color: white;
+    background-color: gray;
+}
+
+ol li:nth-child(4){
+    font-family: "Roboto", sans-serif;
+    color: white;
+    background-color: #3498db;
+}
+
+ol li:nth-child(5){
+    font-family: "Roboto", sans-serif;
+    color: white;
+    background-color: maroon;
+}
+
+ol li:nth-child(6){
+    font-family: "Roboto", sans-serif;
+    color: white;
+    background-color: red;
+}
+
+ol li:nth-child(7){
+    font-family: "Roboto", sans-serif;
+    color: white;
+    background-color: purple;
+}
+
+ol li:nth-child(8){
+    font-family: "Roboto", sans-serif;
+    color: black;
+    background-color: #ff00ff;
+}
+
+ol li:nth-child(9){
+    font-family: "Roboto", sans-serif;
+    color: white;
+    background-color: green;
+}
+
+ol li:nth-child(10){
+    font-family: "Roboto", sans-serif;
+    color: black;
+    background-color: lime;
+}
+
+ol li:nth-child(11){
+    font-family: "Roboto", sans-serif;
+    color: white;
+    background-color: olive;
+}
+
+ol li:nth-child(12){
+    font-family: "Roboto", sans-serif;
+    color: black;
+    background-color: yellow;
+}
+
+ol li:nth-child(13){
+    font-family: "Roboto", sans-serif;
+    color: white;
+    background-color: navy;
+}
+
+ol li:nth-child(14){
+    font-family: "Roboto", sans-serif;
+    color: white;
+    background-color: blue;
+}
+ol li:nth-child(15){
+    font-family: "Roboto", sans-serif;
+    color: white;
+    background-color: teal;
+}
+
+ol li:last-child{
+    font-family: "Roboto", sans-serif;
+    color: black;
+    background-color: aqua;
+}
+
+ol li:hover {
+    cursor: pointer;
+    color: black;
+    background-color: #fff;
+    transition: 0.3s;
+}
+
