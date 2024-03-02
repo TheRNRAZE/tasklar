@@ -1,0 +1,37 @@
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: "Source Code Pro", monospace;
+    color: white;
+}
+body{
+    background-color: #59316b;
+}
+/* body e fontu atanda buttona niye tesir etmir gerek fontu ulduzun icine atim */
+
+
+
+.box{
+    display: inline-block;
+    width: 200px;
+    height: 200px;
+    margin-top: 5%;
+    margin-right: 30px;
+}
+.box:first-child{
+    margin-left: 200px;
+}
+
+/* h1 elave edenden sonra niye margin-left islemedi */
+
+button{
+    font-size: 16px;
+    background-color: #7d4698;
+    width: 200px;
+    height: 40px;
+    border-radius: 9%;
+    border-color: #7d4698;
+    
+}
+/*  buttonun qiragindaki qarani nece goturmek mumkundur */
