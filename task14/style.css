@@ -1,0 +1,66 @@
+body {
+    font-family: "Poppins", sans-serif;
+    font-size: ;
+    font-weight: ;
+    line-height: ;
+}
+.section{
+    background: #f7f7f7;
+}
+header {
+    justify-content: flex-start;
+    padding-top: 40px;
+}
+
+.line-and-writing {
+    display: flex;
+}
+
+.line-and-writing .line {
+    width: 54px;
+    height: 2px;
+    background-color: #eb566c;
+    align-self: center;
+}
+
+header h5 {
+    color: #eb566c;
+    font-size: 18px;
+    margin-bottom: 17px;
+    
+
+}
+
+header h2 {
+
+    font-size: 50px;
+    color: #092c3f;
+}
+
+.col-4 h4{
+    color: #161e46;
+    font-weight: 700;
+    font-size: 25px;
+}
+.col-4 .line{
+    width: 30px;
+    height: 2px;
+    background-color: #eb566c;
+}
+.col-4 h6{
+    color: #eb566c;
+    padding-left: 35px;
+}
+.col-4 img{
+    transition: all 0.3s ease;
+}
+.col-4 img:hover{
+    scale: 110%;
+}
+.img{
+    background-color: #fff;
+}
+
+/* hec cure alinmir our team members yazisi asagi dusmur ,qirmizi yazinin tutdugu yer balacadi deye qara yazi tam qiraga kecmir*/
+/* xetti nece ortaya getireceyk */
+/* scale edende cerciveden kenara cixir,nece etmek olari cixmasin */
