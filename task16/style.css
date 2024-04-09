@@ -1,0 +1,89 @@
+body{
+    font-family: "Roboto", sans-serif;
+    color: #ffffff;
+}
+section{
+    background-color: #2c2c2c;
+    padding-bottom: 70px;
+}
+.container{
+    padding-block: 40px;
+}
+.header{
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+}
+.header h5{
+    font-size: 1.6rem;
+    color: #f4cb08;
+    margin: 15px 20px 0;
+}
+.header h4{
+    font-size: 2rem;
+    font-weight: 900;
+    color: #ffffff;
+    margin: 20px 20px 30px;
+}
+.line{
+    width: 67px;
+    height: 3px;
+    background-color: #f4cb08;
+    transition: all ease .3s;
+    margin-bottom: 40px;
+}
+.line:hover{
+    width: 90px;
+}
+.item-box{
+    padding-inline: 15px;
+}
+
+.item{
+    width: 283px;
+    height: 217px;
+    
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    transition: all 0.2s ease;
+    
+    /* position: relative; */
+}
+.box{
+    border: 1px solid #b3b3b3;
+    padding: 22px 33px 40px;
+
+}
+.box>p{
+ text-align: center;
+}
+.content{
+    position: relative;
+}
+.content>img{
+    
+    position: absolute; 
+    width: 100px;
+    top: -40px;
+    /* right: 1px;  right verrem cox qiraga gedir*/
+}
+
+.content>h4{
+    font-size: 1.6rem;
+    margin-bottom: .5rem;
+    position: absolute;
+    top: 60px;
+    /* yazilar niye sixlasdi */
+}
+.content>h6{
+    font-size: 1.4rem;
+    color: #f4cb08;
+    position: absolute;
+    top: 120px;
+}
+.box:hover {
+    border-bottom:6px solid #b3b3b3 ;
+    border-bottom-left-radius: 20px;
+    border-bottom-right-radius: 20px;
+}
