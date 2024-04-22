@@ -1,0 +1,180 @@
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+body{
+    background-color: #1a9ac9;
+}
+
+.container{
+    
+    max-width: 1140px;
+    margin-top: 60px;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    height: 700px;
+    overflow: hidden;
+    
+    
+}
+.header{
+    text-align: center;
+    color: #fff;
+    font-size: 56px;
+    font-weight: 900;
+}
+.row{
+    display: flex;
+    
+    
+}
+.image{
+    width: 260px;
+    height: 150px;
+    border: 1px solid #fff;
+    
+}
+img{
+    width: 100%;
+    height: 100%; 
+}
+.image:hover{
+    border: none;
+}
+
+.image-1{
+    animation-name: movement1;
+    animation-duration: 3s;
+    animation-fill-mode: forwards;
+}
+.image-2{
+    animation-name: movement2;
+    animation-duration: 3s;
+    animation-fill-mode: forwards;
+}
+.image-3{
+    animation-name: movement3;
+    animation-duration: 3s;
+    animation-fill-mode: forwards;
+}
+.image-4{
+    animation-name: movement4;
+    animation-duration: 3s;
+    animation-fill-mode: forwards;
+}
+.image-5{
+    animation-name: movement5;
+    animation-duration: 3s;
+    animation-fill-mode: forwards;
+}
+.image-6{
+    animation-name: movement6;
+    animation-duration: 3s;
+    animation-fill-mode: forwards;
+}
+.image-7{
+    animation-name: movement6;
+    animation-duration: 3s;
+    animation-fill-mode: forwards;
+}
+.image-8{
+    animation-name: movement7;
+    animation-duration: 3s;
+    animation-fill-mode: forwards;
+}
+.image-9{
+    animation-name: movement2;
+    animation-duration: 3s;
+    animation-fill-mode: forwards;
+}
+
+
+
+
+@keyframes movement1{
+    0%{
+        transform: translate(0,0);
+    }
+    25%{
+           transform: translate(260px,0);
+    }
+    
+    100%{
+        transform: translate(260px,150px);
+    }
+}
+@keyframes movement2{
+    0%{
+        transform: translate(0,0);
+    }
+    25%{
+           transform: translate(-130px,0);
+    }
+    
+    100%{
+        transform: translate(-260px,0);
+    }
+}
+@keyframes movement3{
+    0%{
+        transform: translate(0,0);
+    }
+    25%{
+           transform: translate(0,70px);
+    }
+    
+    100%{
+        transform: translate(0,150px);
+    }
+}
+@keyframes movement4{
+    0%{
+        transform: translate(0,0);
+    }
+    25%{
+           transform: translate(0,70px);
+    }
+    
+    100%{
+        transform: translate(0,150px);
+    }
+}
+@keyframes movement5{
+    0%{
+        transform: translate(0,0);
+    }
+    25%{
+           transform: translate(260px,0);
+    }
+    
+    100%{
+        transform: translate(260px,150px);
+    }
+}
+@keyframes movement6{
+    0%{
+        transform: translate(0,0);
+    }
+    25%{
+           transform: translate(0,-70px);
+    }
+    
+    100%{
+        transform: translate(0,-150px);
+    }
+}
+@keyframes movement7{
+    0%{
+        transform: translate(0,0);
+    }
+    25%{
+           transform: translate(0,-150px);
+    }
+    
+    100%{
+        transform: translate(0,-300px);
+    }
+}

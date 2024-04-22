@@ -1,0 +1,147 @@
+body{
+    font-family: "Mulish", sans-serif;
+    line-height: 1.7;
+    color: gray;
+    font-weight: 300;
+    font-size: 1.1rem;
+    /* position: relative; */
+}
+a{
+    color: gray;
+}
+#navbar{
+    width: 100%;
+    padding: 24px;
+    background-color: #fff;
+    position: fixed;
+}
+.nav-container{
+    padding-inline: 7rem;
+    
+}
+#navbar .row{
+    justify-content: space-evenly;
+}
+.logo{
+    font-size: 1.3rem;
+    font-weight: 900;
+}
+.logo a{
+    color: #000;
+}
+.navigation-panel{
+    display: flex;
+    justify-content: space-between;
+}
+
+.home{
+    padding: 5px 20px;
+    transition: all 0.3s ease;
+}
+.courses{
+    padding: 5px 20px;
+    transition: all 0.3s ease;
+}
+.programs{
+    padding: 5px 20px;
+    transition: all 0.3s ease;
+}
+.teachers{
+    padding: 5px 20px;
+    transition: all 0.3s ease;
+}
+.nav-btn{
+    padding: 5px 20px;
+    
+}
+.nav-btn a{
+    padding: 14px 20px;
+    font-size: 0.7rem;
+    border-radius: 30px;
+    background-color: #7971ea;
+    border-radius: 30px;
+    color: #fff;
+    font-weight: 900;
+    transition: all 0.3s ease;
+}
+.home>a:hover,.courses>a:hover,.programs>a:hover,.teachers>a:hover{
+    color: #7971ea;
+}
+.nav-btn a:hover{
+    background-color: #635cbb;
+}
+
+/* home */
+
+/* #home{
+    
+    height: 90vh;
+    background-image: url(https://preview.colorlib.com/theme/oneschool/images/hero_1.jpg.webp);
+    background-repeat: no-repeat;
+    background-attachment: fixed;
+    background-size: cover;
+    margin-bottom: 30px;
+    position: relative;
+} */
+/* .h-overlay{
+    position: absolute;
+    width: 100%;
+    height: 100%;
+    background-color: rgba(0, 0, 0, 0.7);
+    content: "";
+    top: 0;
+    left: 0;
+    right: 0;
+    bottom: 0;
+    z-index: 0;
+} */
+
+/* teachers */
+
+#teachers{
+    background-image: url(https://preview.colorlib.com/theme/oneschool/images/hero_1.jpg.webp);
+    background-attachment: fixed;
+    padding: 4em 0;
+    background-repeat: no-repeat;
+    background-size: cover;
+    position: relative;
+}
+#teachers .container{
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    text-align: center;
+    z-index: 10;
+}
+
+#teachers img{
+    margin-bottom: 1.5rem;
+    width: 25%;
+    border-radius: 50%;
+    z-index: 10;
+}
+#teachers h4{
+    color: #fff;
+    font-size: 1.2rem;
+    z-index: 10;
+}
+#teachers p{
+    color: #fff;
+    font-size: 1.2rem;
+    font-style: italic;
+    margin-bottom: 1rem;
+    z-index: 10;
+}
+.t-overlay{
+    position: absolute;
+    width: 100%;
+    height: 100%;
+    background-color: rgba(0, 0, 0, 0.7);
+    content: "";
+    top: 0;
+    left: 0;
+    right: 0;
+    bottom: 0;
+    z-index: 0;
+}
