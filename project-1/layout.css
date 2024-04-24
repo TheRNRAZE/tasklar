@@ -16,8 +16,15 @@
 }
 
 
-
-
+.pr{
+    position: relative;
+}
+.align-items-center{
+    align-items: center;
+}
+.justify-content-center{
+    justify-content: center;
+}
 /* extra large  - xl*/
 @media screen and (min-width:1200px) {
     .col-xl-1 {
