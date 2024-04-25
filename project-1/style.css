@@ -16,6 +16,8 @@ a {
 }
 
 #navbar {
+    display: flex;
+    align-items: center;
     width: 100%;
     padding: 24px;
     background-color: #fff;
@@ -25,11 +27,19 @@ a {
 }
 
 .nav-container {
+    display: flex;
+    align-items: center;
     padding-inline: 7rem;
+    width: 100%;
+
 }
 
 #navbar .row {
     justify-content: space-evenly;
+    width: 100% !important;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
 }
 
 .logo {
@@ -101,6 +111,7 @@ a {
     height: 90vh;
     background-image: url(https://preview.colorlib.com/theme/oneschool/images/hero_1.jpg.webp);
     background-repeat: no-repeat;
+    background-attachment: fixed;
     background-size: cover;
     margin-bottom: 30px;
     position: relative;
@@ -162,6 +173,7 @@ a {
     border-radius: 10px;
 }
 
+
 .h-right-side h3 {
     color: #000;
     margin-bottom: 1.5rem;
@@ -171,6 +183,7 @@ a {
 
 .h-email,
 .h-pass {
+    height: 48px;
     width: 100%;
     display: inline-block;
     margin-bottom: 1rem;
@@ -183,6 +196,7 @@ a {
 }
 
 .h-re-pass {
+    height: 48px;
     width: 100%;
     display: inline-block;
     margin-bottom: 1.5rem;
@@ -204,6 +218,10 @@ a {
     font-size: 12px;
     font-weight: 900;
     border-radius: 30px;
+}
+
+.h-right-side form input::placeholder {
+    font-size: 17px;
 }
 
 .h-sign-btn:hover,
@@ -283,6 +301,7 @@ a {
 #teacher {
     background-image: url(https://preview.colorlib.com/theme/oneschool/images/hero_1.jpg.webp);
     padding: 4em 0;
+    background-attachment: fixed;
     background-repeat: no-repeat;
     background-size: cover;
     position: relative;
@@ -333,7 +352,7 @@ a {
 
 /* why */
 #why {
-    padding: 4em 0;
+    padding-top: 4em;
     position: relative;
     overflow: hidden;
 }
@@ -351,47 +370,160 @@ a {
     bottom: 0;
     z-index: -1;
 }
-#why .row:first-child{
+
+#why .row:first-child {
     justify-content: center;
     align-items: center;
 }
-#why h3{
+
+#why h3 {
     text-align: center;
     font-size: 3rem;
     color: #000;
     margin-bottom: 1.8rem;
     font-weight: 900;
-} 
-.w-left-side{
+}
+
+.w-left-side {
     margin-left: auto;
     padding: 0 15px;
 }
-.w-left-part{
+
+.w-left-part {
     padding: 1.5rem !important;
     background-color: #fff;
     box-shadow: 0 5px 50px -10px rgba(0, 0, 0, 0.2);
 }
-.w-item{
+
+.w-item {
     display: flex;
     margin-bottom: 1rem;
     align-items: center;
 }
-.w-item-icon{
+
+.w-item-icon {
     margin-right: 1rem;
     background: #615dc2;
-    width: 45px;
-    height: 45px;
+    width: 20%;
+    height: 60px;
     border-radius: 50%;
     position: relative;
     text-align: center;
     display: flex;
     align-items: center;
+    justify-content: center;
 }
-.fa-building-columns,.fa-graduation-cap{
+
+.fa-building-columns,
+.fa-graduation-cap {
+    color: #fff;
+}
+
+.w-item-info {
+    width: 70%;
+}
+
+.w-item-info h4 {
+    font-size: 1rem;
+    color: #343a40;
+    font-weight: 500;
+}
+
+/* programs */
+
+#programs {
+    padding: 4em 0;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+
+}
+
+#programs .row:first-child {
+    margin-bottom: 3rem;
+    justify-content: center;
+    align-items: center;
+
+}
+
+#programs>.container>.row:nth-child(1),
+#programs>.container>.row:nth-child(2),
+#programs>.container>.row:nth-child(3) {
+    justify-content: space-between;
+    margin-bottom: 3rem;
+}
+
+#programs h3 {
+    font-size: 3rem;
+    color: #000;
+    margin-bottom: 1.8rem;
+    font-weight: 900;
+}
+
+#programs>.row:first-child p {
+    text-align: center;
+    margin-bottom: 1rem;
+}
+
+.p-info p {
+    text-align: left;
+    margin-bottom: 1.5rem;
+}
+
+.p-info h4 {
+    color: #000;
+    font-size: 2rem;
+    margin-bottom: 1.5rem;
+    font-weight: 500;
+}
+
+.p-item {
+    display: flex;
+    align-items: center;
+    margin-bottom: 1rem;
+}
+
+.p-item-icon {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 35px;
+    width: 35px;
+    font-size: 0.8rem;
+    border-radius: 50%;
+    background-color: #7971ea;
+    margin-right: 1rem;
+}
+
+.p-item-info {
+    color: #7971ea;
+}
+
+/* contact */
+#contact {
+    padding: 4em 0;
+    background-color: #f8f9fa;
     
 }
-.w-item-info h4{
-font-size: 1rem;
-color: #343a40;
-font-weight: 500;
+#contact .row{
+    display: flex;
+    
+    justify-content: center;
+    align-items: center;
+}
+.c-header h3{
+    font-size: 3rem;
+    color: #000;
+    font-weight: 900;
+    margin-bottom: 1rem;
+}
+.c-header p{
+    margin-bottom: 3rem;
+}
+.c-main input, .c-main a{
+    display: block;
+}
+.c-name{
+    display: flex;
 }
