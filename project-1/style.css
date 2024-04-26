@@ -760,3 +760,24 @@ a {
       top: -10px;
       box-shadow:  0 2px 22px -1px rgba(0, 0, 0, 0.3);
 }
+
+
+/* resposnsive */
+@media screen and (max-width:562px){
+    #navbar .row {
+        flex-direction: column;
+        justify-content: flex-start;
+    }
+    .navigation-panel{
+        flex-direction: column;
+    }
+}
+@media screen and (max-width:768px) and (min-width:562px){
+    #navbar .row {
+        flex-direction: column;
+        justify-content: flex-start;
+    }
+    .navigation-panel{
+        flex-direction: column;
+    }
+}
