@@ -130,6 +130,7 @@ a {
 #home .row {
     height: 100vh;
     min-height: 900px;
+    justify-content: space-between;
 }
 
 .h-left-side {
@@ -164,7 +165,7 @@ a {
 
 .h-right-side {
     padding-inline: 15px;
-    margin-left: 80px;
+    /* margin-left: 80px; */
 }
 
 .h-right-side form {
@@ -508,9 +509,9 @@ a {
 }
 #contact .row{
     display: flex;
-    
     justify-content: center;
     align-items: center;
+    padding-inline: 15px;
 }
 .c-header h3{
     font-size: 3rem;
@@ -526,4 +527,108 @@ a {
 }
 .c-name{
     display: flex;
+}
+.contact input{
+    width: 100%;
+    height: 48px; 
+    padding: 0.375rem 0.75rem;
+    font-size: 1rem;
+    line-height: 1.5;
+    background-color: #fff;
+    background-clip: padding-box;
+    border: 1px solid #ced4da;
+    border-radius: 0.25rem;
+    margin-bottom: 1rem;
+}
+.contact textarea{
+    font-family: "Mulish", sans-serif;
+    width: 100%;
+    padding: 0.375rem 0.75rem;
+    font-size: 1rem;
+    line-height: 1.5;
+    background-color: #fff;
+    background-clip: padding-box;
+    border: 1px solid #ced4da;
+    border-radius: 0.25rem;
+    margin-bottom: 1rem;
+}
+.cfn{
+    padding-right: 15px;
+}
+.cln{
+    padding-left: 15px;
+}
+.c-btn{
+    padding-right: 15px;
+    margin-bottom: 1rem;
+    flex: 0 0 50%;
+    
+}
+.c-btn a{
+    border-radius: 30px;
+    font-size: 13px;
+    font-weight: 900;
+    text-transform: uppercase;
+    padding-inline: 3rem;
+    padding-block: 1rem;
+    color: #fff;
+    background-color: #7971ea;
+    border-color: #7971ea;
+    text-align: center;
+    line-height: 1.5;
+
+}
+
+/* last part */
+#last-part{
+    padding: 7em 0;
+}
+#last-part .row{
+    justify-content: space-between;
+}
+
+#last-part h6{
+    font-size: .9rem;
+    letter-spacing: .1rem;
+    color: #000;
+    margin-bottom: 1.5rem;
+    font-weight: 900;
+}
+
+#last-part p{
+    font-size: 1rem;
+    margin-bottom: 1rem;
+}
+.l-links a{
+    color: #7971ea;
+}
+.l-subscribe input{
+    height: 48px;
+    padding: 0.375rem 0.75rem;
+    font-size: 1rem;
+    line-height: 1.5;
+    color: #495057;
+    background-color: #fff;
+    border: 1px solid #ced4da;
+}
+.l-form{
+    display: flex;
+}
+.l-subscribe .button{ 
+    font-family: "Mulish", sans-serif;
+    color: #fff;
+    background-color: #7971ea;
+    border: #7971ea;
+    font-size: 12px;
+    font-weight: 900;
+    padding: 14px 30px;
+    text-transform: uppercase;
+    height: 43px;
+    margin-left: 0;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+.l-subscribe .button a{
+    color: #fff;
 }
