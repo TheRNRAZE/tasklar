@@ -46,5 +46,6 @@ console.log(e+f,e-f,e*f,e/f);
 //task15
 let h = 12345;
 let g = 98765;
-let i = g*h;
+let i = toString(g*h);
+
 console.log(i[5]);//neter tapaq 6ci reqemi
