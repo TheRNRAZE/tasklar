@@ -55,3 +55,84 @@ body{
     opacity: 1;
     visibility: visible;
 }
+
+/* second section */
+#second-sec{
+    padding-block: 30px;
+}
+#second-sec .row{
+    justify-content: space-between;
+}
+.ss-logo{
+    width: 144px;
+}
+.ss-input input{
+    
+    font-size: 13px;
+    padding-inline: 15px;
+    width: 100%;
+    min-height: 50px;
+    outline: 0;
+    border: 0;
+}
+.ss-input form{
+    border: 1px solid rgb(238, 238, 238);
+    border-radius: 5px;
+    position: relative;
+    display: flex;
+    align-items: center;
+}
+.ss-input form button{
+    width: 48px;
+    height: 40px;
+    position: absolute;
+    background-color: transparent;
+    border: 0;
+    outline: 0;
+    right: 0;
+}
+.ss-others{
+    display: flex;
+    
+}
+.ss-login,.ss-wish,.ss-cart{
+    display: flex;
+    padding-left: 10px;
+    align-items: center;
+}
+.ss-icon{
+    font-size: 28px;
+    line-height: 17px;
+    padding-inline: 10px;
+    transition: all ease .3s;
+    
+}
+.ss-info p:first-child{
+    color: rgb(119 119 119);
+    font-size: 12px;
+    font-weight: 500;
+    margin-bottom: 6px;
+    transition: all ease .3s;
+}
+.ss-info div{
+    font-size: 13px;
+    line-height: 14px;
+    position: relative;
+}
+.ss-login:hover .ss-icon,.ss-login:hover .ss-info>p:first-child,.ss-wish:hover .ss-icon,.ss-wish:hover .ss-info>p:first-child,.ss-cart:hover .ss-icon,.ss-cart:hover .ss-info>p:first-child{
+    color: rgb(92 175 144 );
+}
+.ss-login ul{
+    position: absolute;
+    background-color: #fff;
+    border: 1px solid rgb(238 238 238 );
+    width: 100px;
+  
+    padding-inline: 10px;
+    /* visibility: hidden;
+    opacity: 0; */
+    right: 0;
+    top: 32px;
+    box-shadow: 0 0 5px 0px rgba(0, 0, 0, 0.1);
+    transition: all .3s ease;
+}
