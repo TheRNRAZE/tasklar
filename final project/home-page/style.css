@@ -45,6 +45,10 @@ body{
 
     /* display: none; */
 }
+.fs-lang-name:hover ul{
+      visibility: visible;
+      opacity: 1;
+}
 .fs-exchange ul li,.fs-lang-name ul li{
     line-height: 1.5;
     padding-block: 5px;
@@ -127,12 +131,17 @@ body{
     background-color: #fff;
     border: 1px solid rgb(238 238 238 );
     width: 100px;
-  
     padding-inline: 10px;
-    /* visibility: hidden;
-    opacity: 0; */
+    visibility: hidden;
+    opacity: 0;
     right: 0;
     top: 32px;
+    left: 0px;
     box-shadow: 0 0 5px 0px rgba(0, 0, 0, 0.1);
     transition: all .3s ease;
+}
+.ss-login:hover ul{
+    visibility: visible;
+    opacity: 1;
+    
 }
