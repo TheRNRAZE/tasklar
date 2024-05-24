@@ -55,7 +55,7 @@ body{
     border-bottom:1px solid  rgb(238 238 238 );
 
 }
-.fs-e-a:hover .fs-exchange>ul{
+.fs-exchange:hover ul{
     opacity: 1;
     visibility: visible;
 }
@@ -130,18 +130,50 @@ body{
     position: absolute;
     background-color: #fff;
     border: 1px solid rgb(238 238 238 );
+    border-radius: 5px;
     width: 100px;
     padding-inline: 10px;
+    padding-block: 5px;
     visibility: hidden;
     opacity: 0;
-    right: 0;
+    right: auto;
     top: 32px;
     left: 0px;
     box-shadow: 0 0 5px 0px rgba(0, 0, 0, 0.1);
     transition: all .3s ease;
 }
+.ss-login ul li{
+    letter-spacing: 0.02rem;
+    
+}
+.ss-login ul a{
+    width: 100%;
+    display: block;
+    font-size: 13px;
+    padding: 10px 20px;
+    text-align: left;
+}
 .ss-login:hover ul{
     visibility: visible;
     opacity: 1;
-    
+}
+/* login i basandan sonra gelen hissede niye iconun altindan baslamir.ve icindeki hisse cox kicik saheye malikdir,yazilar soldan baslamir */
+/* fourth section */
+
+.slider-img1{
+    background-position: center;
+    background-repeat: no-repeat;
+
+    background-image: url() ;
+}
+.slider-img2{
+    background-image: url();
+}
+/* fifth section */
+.fif-product-out{
+    padding-inline: 12px;
+}
+.fif-product{
+    background-color: rgb(255 246 236 );
+    padding: 15px;
 }
