@@ -25,6 +25,9 @@
 .justify-content-center{
     justify-content: center;
 }
+.justify-content-between{
+    justify-content: space-between;
+}
 /* extra large  - xl*/
 @media screen and (min-width:1200px) {
     .col-xl-1 {

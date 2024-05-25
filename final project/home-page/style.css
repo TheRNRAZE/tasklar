@@ -1,40 +1,55 @@
-body{
-    font-family: 'Poppins',sans-serif;
+body {
+    font-family: 'Poppins', sans-serif;
     line-height: inherit;
     overflow-x: hidden;
 }
-#first-sec{
+
+a {
+    color: rgb(119 119 119);
+}
+
+a:hover {
+    color: rgb(92 175 144);
+}
+
+#first-sec {
     padding-block: 10px;
-    color: rgb(119 119 119 );
-    background-color: rgb(248 248 251 );
+    color: rgb(119 119 119);
+    background-color: rgb(248 248 251);
     font-size: 13px;
 }
-.fs-contact{
+
+.fs-contact {
     display: flex;
     gap: 10px;
     letter-spacing: 0.02rem;
 }
-.fs-others{
+
+.fs-others {
     display: flex;
+    justify-content: right;
 }
-.fs-others div{
+
+.fs-others div {
     display: inline-block;
     padding-left: 20px;
     font-size: 14px;
     letter-spacing: 0.7;
 }
-.fs-lang-name , .fs-exchange{
+
+.fs-lang-name,
+.fs-exchange {
     position: relative;
     height: fit-content;
 
 }
-.fs-lang-name ul,.fs-exchange ul{
-    
+
+.fs-lang-name ul,
+.fs-exchange ul {
     position: absolute;
     background-color: #fff;
-    border: 1px solid rgb(238 238 238 );
+    border: 1px solid rgb(238 238 238);
     width: 100px;
-  
     padding-inline: 10px;
     visibility: hidden;
     opacity: 0;
@@ -42,36 +57,43 @@ body{
     top: 32px;
     box-shadow: 0 0 5px 0px rgba(0, 0, 0, 0.1);
     transition: all .3s ease;
+}
 
-    /* display: none; */
+.fs-lang-name:hover ul {
+    z-index: 99;
+    visibility: visible;
+    opacity: 1;
 }
-.fs-lang-name:hover ul{
-      visibility: visible;
-      opacity: 1;
-}
-.fs-exchange ul li,.fs-lang-name ul li{
+
+.fs-exchange ul li,
+.fs-lang-name ul li {
     line-height: 1.5;
     padding-block: 5px;
-    border-bottom:1px solid  rgb(238 238 238 );
+    border-bottom: 1px solid rgb(238 238 238);
 
 }
-.fs-exchange:hover ul{
-    opacity: 1;
+
+.fs-exchange:hover ul {
+    z-index: 99;
     visibility: visible;
+    opacity: 1;
 }
 
 /* second section */
-#second-sec{
+#second-sec {
     padding-block: 30px;
 }
-#second-sec .row{
+
+#second-sec .row {
     justify-content: space-between;
 }
-.ss-logo{
+
+.ss-logo {
     width: 144px;
 }
-.ss-input input{
-    
+
+.ss-input input {
+
     font-size: 13px;
     padding-inline: 15px;
     width: 100%;
@@ -79,14 +101,16 @@ body{
     outline: 0;
     border: 0;
 }
-.ss-input form{
+
+.ss-input form {
     border: 1px solid rgb(238, 238, 238);
     border-radius: 5px;
     position: relative;
     display: flex;
     align-items: center;
 }
-.ss-input form button{
+
+.ss-input form button {
     width: 48px;
     height: 40px;
     position: absolute;
@@ -95,85 +119,181 @@ body{
     outline: 0;
     right: 0;
 }
-.ss-others{
+
+.ss-others {
     display: flex;
-    
+
 }
-.ss-login,.ss-wish,.ss-cart{
+
+.ss-login,
+.ss-wish,
+.ss-cart {
     display: flex;
     padding-left: 10px;
     align-items: center;
+    position: relative;
+    transition: .3s all ease;
 }
-.ss-icon{
+
+.ss-icon {
     font-size: 28px;
     line-height: 17px;
     padding-inline: 10px;
     transition: all ease .3s;
-    
+
 }
-.ss-info p:first-child{
+
+.ss-info p:first-child {
     color: rgb(119 119 119);
     font-size: 12px;
     font-weight: 500;
     margin-bottom: 6px;
     transition: all ease .3s;
 }
-.ss-info div{
+
+.ss-info div {
     font-size: 13px;
     line-height: 14px;
-    position: relative;
+    /* position: relative; */
 }
-.ss-login:hover .ss-icon,.ss-login:hover .ss-info>p:first-child,.ss-wish:hover .ss-icon,.ss-wish:hover .ss-info>p:first-child,.ss-cart:hover .ss-icon,.ss-cart:hover .ss-info>p:first-child{
-    color: rgb(92 175 144 );
+
+.ss-login:hover .ss-icon,
+.ss-login:hover .ss-info>p:first-child,
+.ss-wish:hover .ss-icon,
+.ss-wish:hover .ss-info>p:first-child,
+.ss-cart:hover .ss-icon,
+.ss-cart:hover .ss-info>p:first-child {
+    color: rgb(92 175 144);
 }
-.ss-login ul{
+
+.ss-login ul {
     position: absolute;
     background-color: #fff;
-    border: 1px solid rgb(238 238 238 );
+    border: 1px solid rgb(238 238 238);
     border-radius: 5px;
-    width: 100px;
+    width: 140px;
     padding-inline: 10px;
     padding-block: 5px;
     visibility: hidden;
     opacity: 0;
-    right: auto;
-    top: 32px;
+    /* right: auto; */
+    top: 55px;
     left: 0px;
     box-shadow: 0 0 5px 0px rgba(0, 0, 0, 0.1);
     transition: all .3s ease;
+    z-index: 10;
 }
-.ss-login ul li{
+
+.ss-login ul li {
     letter-spacing: 0.02rem;
-    
+    transition: all ease .3s;
 }
-.ss-login ul a{
+
+.ss-login ul a {
+    color: rgb(119 119 119);
     width: 100%;
     display: block;
     font-size: 13px;
     padding: 10px 20px;
     text-align: left;
 }
-.ss-login:hover ul{
+
+.ss-login:hover ul {
     visibility: visible;
     opacity: 1;
 }
+
+.ss-login ul li:hover a {
+    color: rgb(92 175 144);
+}
+
 /* login i basandan sonra gelen hissede niye iconun altindan baslamir.ve icindeki hisse cox kicik saheye malikdir,yazilar soldan baslamir */
 /* fourth section */
 
-.slider-img1{
+.slider-img1 {
     background-position: center;
     background-repeat: no-repeat;
 
-    background-image: url() ;
-}
-.slider-img2{
     background-image: url();
 }
+
+.slider-img2 {
+    background-image: url();
+}
+
 /* fifth section */
-.fif-product-out{
+.fif-product-out {
     padding-inline: 12px;
 }
-.fif-product{
-    background-color: rgb(255 246 236 );
+
+.fif-product {
+    position: relative;
+    /* background-color: rgb(255 246 236 ); */
     padding: 15px;
+    width: 100%;
 }
+
+.fif-pr {
+    position: relative;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    background-color: rgb(255, 255, 255);
+    border-radius: 5px;
+    padding: 15px;
+
+    z-index: 5;
+    box-shadow: 0 5px 15px rgba(88, 110, 125, 0.1);
+}
+
+.fif-pr i {
+    font-size: 40px;
+    color: rgb(92 175 144);
+    margin-block: 10px;
+    /* line-height: 0; */
+}
+
+.fif-pr h5 a {
+    line-height: 22px;
+    font-size: 15px;
+    color: rgb(75 89 102);
+    font-weight: 600;
+}
+
+.fif-pr p {
+    line-height: 28px;
+    font-size: 13px;
+    font-weight: 300;
+    letter-spacing: 0.02rem;
+    color: rgb(119 119 119);
+}
+
+.fif-product::after {
+    content: "";
+    background-image: linear-gradient(360deg, #fff, #fff, transparent);
+    width: 100%;
+    height: 100%;
+    transition: all 0.3s ease-in-out;
+    position: absolute;
+    top: 0;
+    left: 0;
+    right: 0;
+}
+
+.fif-pr span {
+    color: rgb(255 255 255);
+    background-color: rgb(92 175 144);
+    border-top-right-radius: 5px;
+    border-bottom-left-radius: 5px;
+    position: absolute;
+    top: 0;
+    right: 0;
+    font-size: 12px;
+    padding-inline: 5px;
+    font-weight: 600;
+}
+
+/* .fif-product::after:hover{
+    top: 50%;
+} */
