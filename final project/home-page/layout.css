@@ -14,7 +14,9 @@
     padding-inline: 15px;
     box-sizing: border-box;
 }
-
+.d-flex{
+    display: flex;
+}
 
 .pr{
     position: relative;
