@@ -1,0 +1,111 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+
+<body>
+
+
+
+
+    <script>
+        // //task4
+        // let nums = prompt('eded daxil ele');
+        // let numsArr = nums.split(',');
+        // console.log(numsArr);
+
+        //task5
+        let a = '32, 31, 34, 36, 31';
+        let arr1 = a.split(',').join(';')
+        console.log(arr1)
+        //task1
+        let groupMates = ['Ali', 'Vali', 'Alirza']
+        groupMates.push('Nurlan')
+        groupMates.shift()
+        console.log(groupMates)
+        // //task2
+        let arr2 = [1, 2, 3, 4, 5, 6, 7, 8, 9, 10];
+        // function task2(x,y,...z) {
+        //     console.log(z);
+        //     return z;
+        // }
+        // task2[arr2[0],arr2[1],arr2] alinmadi
+        //task3
+        let max = Math.max(...arr2)
+        console.log(max)
+        //task4
+        let arr3 = [1, 2, 3, 4, 5];
+        let arr4 = arr3.map(item => (item * 2))
+        console.log(arr4)
+        console.log(arr3)
+        //task5
+        let employees = [
+            ['Jaylee Macy', 'marketing'],
+            ['John Smith', 'management'],
+            ['Blossom Hartley', 'design'],
+            ['Austin Carpenter', 'marketing'],
+            ['Joan Knowles', 'development'],
+            ['Sally Nunez', 'management'],
+            ['Laurel Ward', 'development'],
+            ['Lark Simon', 'marketing'],
+            ['Jane Stone', 'management'],
+            ['Courtney Olson', 'development'],
+        ];
+        let development = []
+        // for (let i = 0; i < employees.length; i++) {
+        //     let employee = employees[i]
+
+        //         if (employee[1] === 'development') {
+        //             development.push(employee[0])
+        //         }
+
+
+        // }
+        employees.forEach((i)=>{
+            if (i[1] === 'development') {
+                     development.push(i[0])
+                }
+        })
+        console.log(development)
+        //task7
+        let array = [1, 6, 34, 5, 1, -4, 54, 76, 23, 65, 3, 50, 45, 100, 2346, -52, 6545, 0, 45, 22];
+        //muellim sortu izah etsin sonra
+        //task8
+        let arr5 = [-3,-5,2,4,-6];
+        let arr6 = arr5.map(
+            (i)=>{
+                if (i<0) {
+                    console.log(i)
+                    return i;
+                }
+                
+            }
+        )
+        console.log(arr6)
+//undefinedlari nece legv etmek olar arrayda
+//task9
+arr5.forEach((i)=>{
+    if (i>0) {
+        console.log(i);
+        return i;
+    }
+})
+//task10
+const names = ["Michael", "Trevor", "Franklin", "Lamar", "Jimmy"];
+function printWithDashes(item,index) {
+    console.log('------\n'+names[index]+'\n-----')
+}
+names.forEach(printWithDashes)//niye islemir
+
+
+
+
+    </script>
+
+</body>
+
+</html>
