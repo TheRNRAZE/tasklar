@@ -299,27 +299,157 @@ a:hover {
 } */
 
 /* sixth section */
-#sixth-section{
+#sixth-section {
     padding-block: 40px;
 }
-.sixth-header{
+
+.sixth-header {
     padding-bottom: 20px;
     margin-bottom: 20px;
     flex-direction: column;
 }
-.sixth-header h4{
+
+.sixth-header h4 {
     font-size: 25px;
     font-weight: 600;
     color: rgb(75 89 102);
 }
-.sixth-header h4 span{
+
+.sixth-header h4 span {
     color: rgb(92 175 144);
 }
-.sixth-header p{
-    color: rgb(119 119 119 );
+
+.sixth-header p {
+    color: rgb(119 119 119);
     line-height: 18px;
     font-size: 14px;
     margin-top: 10px;
     max-width: 400px;
     font-weight: 300;
+}
+
+.six-product-out {
+    padding-inline: 12px;
+    height: 100%;
+}
+
+.six-product {
+    border: 1px solid rgb(238 238 238);
+    border-radius: 5px;
+}
+
+.six-img {
+    transition: all 0.3s ease 0s;
+    position: relative;
+    overflow: hidden;
+
+    img {
+        transition: .3s all ease;
+    }
+}
+
+.sale {
+    position: absolute;
+    top: 10px;
+    right: 12px;
+    color: #fff;
+    font-size: 11px;
+    font-weight: 500;
+    line-height: 12px;
+    letter-spacing: 0.5px;
+    padding: 5px 10px;
+    background: rgb(255 112 112);
+    border-radius: 5px;
+}
+
+.img-hover {
+    display: flex;
+    justify-content: center;
+    position: absolute;
+    right: 0;
+    left: 0;
+    bottom: -10px;
+    opacity: 0;
+    z-index: 13;
+    visibility: hidden;
+    transition: all .3s ease;
+
+    .img-hover-icons {
+        border: 1px solid rgb(238, 238, 238);
+        border-radius: 5px;
+        margin-inline: 2px;
+        background-color: #fff;
+        width: 30px;
+        height: 30px;
+        text-align: center;
+
+        &:hover {
+            background-color: #5caf90;
+            color: #fff;
+        }
+    }
+}
+
+.six-img:hover .img-hover {
+    opacity: 1;
+    visibility: visible;
+    bottom: 10px;
+}
+
+.six-img:hover img {
+    scale: 1.2;
+}
+
+.six-info {
+    padding: 20px;
+
+    a {
+        font-size: 12px;
+    }
+
+    h2 {
+        font-size: 16px;
+        margin-block: 10px;
+
+        a {
+            letter-spacing: 0.85px;
+            line-height: 22px;
+            font-size: 15px;
+            font-weight: 400;
+        }
+    }
+
+    .star-icon {
+        margin-bottom: 10px;
+
+        .fa-solid {
+            color: rgb(242 125 12);
+            padding-inline: 3px;
+            font-size: 14px;
+        }
+
+        .fa-regular {
+            padding-inline: 3px;
+            font-size: 14px;
+            color: rgb(119 119 119);
+        }
+    }
+
+    .price {
+        h3 {
+            font-weight: 700;
+            font-size: 14px;
+        }
+
+        .discount-number {
+            margin-right: 7px;
+            color: rgb(75 89 102);
+
+        }
+
+        .main-number {
+            color: rgb(119 119 119);
+            font-size: 14px;
+        }
+    }
 }
