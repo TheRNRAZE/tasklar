@@ -28,7 +28,7 @@ btns[0].addEventListener('click', () => {
     btns[1].addEventListener("click",()=>{
     clearInterval(timer);
     })
-    btns[2].addEventListener(()=>{
+    btns[2].addEventListener("click",()=>{
         clearInterval(timer)
         timeMin=0
         timeMs=0
@@ -38,10 +38,6 @@ btns[0].addEventListener('click', () => {
         ms.innerHTML = "00";
     })//reset niye islemir
 })
-
-
-
-
 
 
 
