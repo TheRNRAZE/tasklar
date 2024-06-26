@@ -1,0 +1,113 @@
+body {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+    height: 100vh;
+    background-image: url(https://cdnb.artstation.com/p/assets/images/images/058/560/031/large/roysi-patramilo-sengul-background2.jpg?1674468575);
+}
+.title{
+    font-size: 70px;
+    color: #763626;
+    -webkit-text-stroke-color: #FFF2D7;
+    -webkit-text-stroke-width: .5px;
+    font-style: italic;
+}
+
+.game-modal {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    width: 300px;
+    height: 300px;
+    background-color: transparent;
+    /* border: 1px solid black; */
+
+    input {
+        font-size: 20px;
+        margin-bottom: 10px;
+    }
+
+    button {
+        font-size: 20px;
+        border: none;
+        outline: none;
+        width: 100px;
+        height: 40px;
+        margin-bottom: 10px;
+    }
+}
+
+.container {
+    width: 1000px;
+    height: 700px;
+    background-color: #FFF2D7;
+    position: relative;
+    display: none;
+    border-radius: 20px;
+
+    .game-container {
+        position: absolute;
+        left: 20px;
+        top: 20px;
+        width: 800px;
+        height: 600px;
+        background-color: #fff;
+        position: relative;
+
+        .ballon {
+            cursor: pointer;
+            width: 40px;
+            height: 40px;
+            border: 1px solid black;
+            border-radius: 50%;
+            background-color: red;
+            position: absolute;
+            z-index: 100;
+        }
+    }
+
+    .game-info {
+        position: absolute;
+        top: 30px;
+        right: 0;
+    }
+}
+
+.gameover {
+    border: 1px solid black;
+    text-align: center;
+    position: absolute;
+    z-index: 10;
+    top: 50%;
+    left: 50%; 
+    transform: translate(-50%,-50%);
+    width: 90%;
+    height: 500px;
+    background-color: bisque;
+    display: none;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    gap: 20px;
+    z-index: 101;
+    border-radius: 20px;
+
+    p{
+        color:  #763626;
+        font-size: 19px;
+        font-weight: 600;
+    }
+    h1{
+        font-size: 60px;
+        color: #330000;
+        /* -webkit-text-stroke-color: black;
+        -webkit-text-stroke-width: 1px; */
+    }
+    h3{
+        color: #F98866;
+
+    }
+
+}
