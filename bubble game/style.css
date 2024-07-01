@@ -1,17 +1,29 @@
+*{
+    margin: 0;
+    padding: 0;
+    font-family: "Roboto", sans-serif;
+    box-sizing: border-box;
+}
+
 body {
     display: flex;
     justify-content: center;
     align-items: center;
     flex-direction: column;
     height: 100vh;
+    background-attachment: fixed;
+    background-repeat: no-repeat;
+    background-size: cover;
     background-image: url(https://cdnb.artstation.com/p/assets/images/images/058/560/031/large/roysi-patramilo-sengul-background2.jpg?1674468575);
 }
-.title{
-    font-size: 70px;
+
+.title {
+    font-size: 6vw;
     color: #763626;
     -webkit-text-stroke-color: #FFF2D7;
     -webkit-text-stroke-width: .5px;
     font-style: italic;
+    margin-bottom: 12vh;
 }
 
 .game-modal {
@@ -19,47 +31,58 @@ body {
     flex-direction: column;
     align-items: center;
     justify-content: center;
-    width: 300px;
-    height: 300px;
+    width: 50%;
+    height: 7vh;
     background-color: transparent;
     /* border: 1px solid black; */
 
     input {
-        font-size: 20px;
-        margin-bottom: 10px;
+        font-size: 3vw;
+        margin-bottom: 3vh;
     }
 
     button {
-        font-size: 20px;
+        
+        font-size: 2vw;
         border: none;
         outline: none;
-        width: 100px;
-        height: 40px;
-        margin-bottom: 10px;
+        width: 40%;
+        height: 5vh;
+        margin-bottom: 3vh;
+        border-radius: 10px;
     }
 }
 
 .container {
-    width: 1000px;
-    height: 700px;
+    width: 90%;
+    height: 85vh;
     background-color: #FFF2D7;
     position: relative;
     display: none;
     border-radius: 20px;
+    /* flex-direction: row; */
+    /* flex-wrap: wrap !important;  */
 
     .game-container {
-        position: absolute;
-        left: 20px;
-        top: 20px;
-        width: 800px;
-        height: 600px;
-        background-color: #fff;
+        z-index: 10;
         position: relative;
+        left: 2vw;
+        top: 2.5vh;
+        width: 70%;
+        height: 90%;
+        background-color: #fff;
+
+        .overlay {
+            position: absolute;
+            inset: 0;
+            z-index: 100;
+            background-color: transparent;
+        }
 
         .ballon {
             cursor: pointer;
-            width: 40px;
-            height: 40px;
+            width: 4%;
+            height: 8%;
             border: 1px solid black;
             border-radius: 50%;
             background-color: red;
@@ -69,9 +92,22 @@ body {
     }
 
     .game-info {
+        width: 20%;
+        font-size: 1.5vw;
         position: absolute;
-        top: 30px;
+        top: 20%;
         right: 0;
+        z-index: 10;
+
+        .controls {
+            button {
+                background-color: transparent;
+            
+                &:disabled {
+                    border: none;
+                }
+            }
+        }
     }
 }
 
@@ -81,10 +117,10 @@ body {
     position: absolute;
     z-index: 10;
     top: 50%;
-    left: 50%; 
-    transform: translate(-50%,-50%);
+    left: 50%;
+    transform: translate(-50%, -50%);
     width: 90%;
-    height: 500px;
+    height: 50vh;
     background-color: bisque;
     display: none;
     flex-direction: column;
@@ -94,20 +130,17 @@ body {
     z-index: 101;
     border-radius: 20px;
 
-    p{
-        color:  #763626;
-        font-size: 19px;
+    p {
+        color: #763626;
+        font-size: 2vw;
         font-weight: 600;
     }
-    h1{
-        font-size: 60px;
+
+    h1 {
+        font-size: 8vw;
         color: #330000;
         /* -webkit-text-stroke-color: black;
         -webkit-text-stroke-width: 1px; */
     }
-    h3{
-        color: #F98866;
-
-    }
-
 }
+
