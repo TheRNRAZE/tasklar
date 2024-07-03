@@ -268,4 +268,8 @@ body {
     .game-modal {
         margin-top: 8%;
     }
+    .game-modal button{
+        -webkit-text-stroke: black 0.2px;
+
+    }
 }
