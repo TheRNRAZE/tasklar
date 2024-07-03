@@ -23,6 +23,8 @@ const resetBtn = document.querySelector("#reset")
 const gameInfoMenu = document.querySelector(".game-info")
 const usersList = document.querySelector(".users")
 
+console.log(gameModal.clientWidth)
+
 
 let users = [];
 let localData = JSON.parse(localStorage.getItem("usersBubbleGame"));
@@ -82,11 +84,14 @@ function start(e) {
 
 
 function startGame(t, p, m) {
+
+
     if (inputUserName.value.length != 0) {
         userName.innerText = inputUserName.value;
         container.style.display = "flex";
         container.style.flexWrap = "wrap";
         gameModal.style.display = "none";
+        gameInfoMenu.style.display = "flex";
         time = t
         point = p
         max = m
@@ -159,9 +164,9 @@ function playAgain() {
     gameOverMenu.style.display = "none";
     gameContainer.style.display = "block"
     gameInfoMenu.style.display = "block"
-    gameContainer.innerHTML=""
+    gameContainer.innerHTML = ""
     score = 0
-    scoreElem.innerHTML=score
+    scoreElem.innerHTML = score
     startGame(time, point, max)
 
 

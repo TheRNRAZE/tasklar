@@ -14,6 +14,7 @@
 
 <body>
     <h1 class="title">RNR-Bubble-Game</h1>
+
     <!-- easy de 1.5san 50 sar
      medium da 1san  30 sar 
      hard da 0.7 san  25sar -->
@@ -28,24 +29,30 @@
         <div class="game-container">
             <!-- <button class="ballon"></button> -->
         </div>
-        <div class="game-info">
-            <p>Username: <span class="username"></span></p>
-            <p>Score: <span class="score"></span></p>
-            <p>The Number of Ballons: <span class="total"></span></p>
-            <div class="controls">
-                <button id="stop">Stop</button>
-                <button id="reset">Reset</button>
-                <button id="start" disabled>Start</button>
-            </div>
-            <ul class="users"></ul>
 
-        </div>
 
         <div class="gameover">
         </div>
+
+
     </div>
 
-    <script src="main.js"></script>
+    </div>
+    <div class="game-info">
+        <div class="game-info-display">
+            <p>Username: <span class="username"></span></p>
+            <p>Score: <span class="score"></span></p>
+            <p>The Number of Ballons: <span class="total"></span></p>
+        </div>
+
+        <ul class="users"></ul>
+        <div class="controls">
+            <button id="stop">Stop</button>
+            <button id="reset">Reset</button>
+            <button id="start" disabled>Start</button>
+        </div>
+    </div>
+        <script src="main.js"></script>
 </body>
 
 </html>

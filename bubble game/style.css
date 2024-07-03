@@ -1,4 +1,4 @@
-*{
+* {
     margin: 0;
     padding: 0;
     font-family: "Roboto", sans-serif;
@@ -10,7 +10,6 @@ body {
     justify-content: center;
     align-items: center;
     flex-direction: column;
-    height: 100vh;
     background-attachment: fixed;
     background-repeat: no-repeat;
     background-size: cover;
@@ -23,10 +22,11 @@ body {
     -webkit-text-stroke-color: #FFF2D7;
     -webkit-text-stroke-width: .5px;
     font-style: italic;
-    margin-bottom: 12vh;
+    margin-bottom: 5%;
 }
 
 .game-modal {
+    margin-top: 6%;
     display: flex;
     flex-direction: column;
     align-items: center;
@@ -42,7 +42,7 @@ body {
     }
 
     button {
-        
+
         font-size: 2vw;
         border: none;
         outline: none;
@@ -55,20 +55,22 @@ body {
 
 .container {
     width: 90%;
-    height: 85vh;
+    height: 70vh;
     background-color: #FFF2D7;
     position: relative;
     display: none;
     border-radius: 20px;
+    align-items: center;
+    justify-content: center;
     /* flex-direction: row; */
     /* flex-wrap: wrap !important;  */
 
     .game-container {
         z-index: 10;
         position: relative;
-        left: 2vw;
-        top: 2.5vh;
-        width: 70%;
+        /* left: 2vw;
+        top: 2.5vh; */
+        width: 90%;
         height: 90%;
         background-color: #fff;
 
@@ -91,23 +93,59 @@ body {
         }
     }
 
-    .game-info {
-        width: 20%;
-        font-size: 1.5vw;
-        position: absolute;
-        top: 20%;
-        right: 0;
-        z-index: 10;
 
-        .controls {
-            button {
-                background-color: transparent;
-            
-                &:disabled {
-                    border: none;
-                }
+}
+
+.game-info {
+    border-radius: 20px;
+    margin-top: 1%;
+    height: 30%;
+    margin-bottom: 1%;
+    padding: 1% 2%;
+    background-color: #fff;
+    width: fit-content;
+    font-size: 1.5vw;
+    /* position: absolute; */
+    /* top: 20%; */
+    /* right: 0; */
+    /* z-index: 10; */
+    display: none;
+    text-align: center;
+
+    .controls {
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+        align-items: center;
+        padding: 1% 5%;
+        width: 20%;
+
+        button {
+            background-color: transparent;
+
+            &:disabled {
+                border: none;
             }
         }
+    }
+
+    ul {
+        padding: 1% 5%;
+        width: 30%;
+        list-style-type: decimal;
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+        align-items: center;
+    }
+
+    .game-info-display {
+        padding: 1% 3%;
+        text-align: center;
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+        align-items: center;
     }
 }
 
@@ -144,3 +182,27 @@ body {
     }
 }
 
+@media screen and (max-width:760px) {
+    .container {
+        justify-content: center;
+        /* align-items: center; */
+
+    }
+
+    .game-container {
+        width: 100%;
+    }
+
+    .container>.game-container>.ballon {
+        width: 4%;
+        height: 6%;
+    }
+
+    .game-info {
+        font-size: 1rem;
+    }
+
+    .game-modal {
+        margin-top: 8%;
+    }
+}
