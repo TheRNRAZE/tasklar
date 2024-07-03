@@ -72,12 +72,12 @@ resetBtn.addEventListener("click", () => {
 
 function start(e) {
     if (e.target.id === easyBtn.id) {
-        startGame(1500, 1, 50)
+        startGame(700, 1, 50)
     } else if (this === mediumBtn) {
-        startGame(1000, 2, 30)
+        startGame(500, 2, 30)
 
     } else {
-        startGame(700, 3, 25)
+        startGame(300, 3, 25)
     }
 }
 
@@ -104,7 +104,7 @@ function startGame(t, p, m) {
             let bgRandomColor = Math.floor(Math.random() * 16777215).toString(16)
             ballon.style.left = `${leftRandomNumber}%`
             ballon.style.top = `${topRandomNumber}%`
-            ballon.style.backgroundColor = `#${bgRandomColor}`
+            ballon.style.backgroundColor = `#4682B4`
 
             ballon.addEventListener("click", () => {
                 audio.play()
@@ -122,7 +122,7 @@ function startGame(t, p, m) {
                 gameOverMenu.style.display = "flex"
                 gameOverMenu.innerHTML = ` <p>Score: ${score}</p>
                 <h1>You Lost</h1>
-<button onclick="playAgain()">Play Again</button>
+<button onclick="playAgain()">Replay</button>
                 `
                 gameContainer.style.display = "none"
                 gameInfoMenu.style.display = "none"
